@@ -1,7 +1,7 @@
 Second page
 =============
+
 Click on the first icon in header block to go to the second page.
-=============
 
 
 Gulp Boilerplate for generic CSS/HTML/JS development
