@@ -25,14 +25,16 @@
 
 {% set products = [
 		{
-			name: "Product Name",
-			img: "img/product_1.jpg",
-			text: "Product Short Description. The quick brown fox jumps over the lazy dog."
+			"name": "Product Name",
+			"img": "img/product_1.jpg",
+			"text1": "Product Short Description.",
+			"text2": "The quick brown fox jumps over the lazy dog."
 		},
 		{
-			name: "Product Name",
-			img: "img/product_2.jpg",
-			text: "Product Short Description. The quick brown fox jumps over the lazy dog. ssssssssssssss sssssss sssss ssssssss"
+			"name": "Product Name",
+			"img": "img/product_2.jpg",
+			"text1": "Product Short Description.",
+			"text2": "The quick brown fox jumps over the lazy dog."
 		}
 	]
 %}
@@ -68,7 +70,10 @@
 				<h4 class="product__name layout_block__name">{{ product.name }}</h4>
 				<div class="product__descr flex">
 					<img src={{ product.img }} class="product__image" alt="product">
-					<p class="product__text layout_block__text">{{ product.text }}</p>
+					<div class="product__text">
+						<p class="layout_block__text">{{ product.text1 }}</p>
+						<p class="layout_block__text">{{ product.text2 }}</p>
+					</div>
 				</div>	
 			</div>
 		{% endfor %}
