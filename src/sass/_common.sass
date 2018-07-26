@@ -1,0 +1,109 @@
++font(PN, ProximaNova-regular)
++font(PNLight, ProximaNova-light)
+
+=links($fz, $color, $hover)
+	font-size: $fz
+	color: $color
+	transition: color 0.2s linear
+	&:hover
+		color: $hover
+
+body
+	font-size: 16px
+	font-family: PN, sans-serif
+	font-weight: 400
+	color: #fff
+
+.container
+	min-width: 970px
+	max-width: 1440px
+	margin: 0 auto
+	padding: 0 15px
+	&-contact
+		max-width: 1300px
+		margin: 0 auto
+		padding: 0 10px
+
+.flex
+	display: flex
+
+img
+	vertical-align: top
+
+a
+	text-decoration: none
+
+.line
+	width: 100%
+	height: 1px
+	background-color: $grey_solitude
+
+.btn
+	height: 30px
+	padding: 0 20px
+	font-family: PN, sans-serif
+	font-size: 14px
+	line-height: 30px
+	color: #fff
+	border-radius: 5px
+	background-color: $green
+	transition: background-color 0.2s linear
+	&:hover
+		background-color: $green_sushi
+	&-form_submit
+		width: 100%
+		height: 52px
+		font-size: 16px
+		line-height: 52px
+
+.modal
+	display: none
+	&__back
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba($grey-blue, 0.4)
+		z-index: 1000
+	&__block
+		position: fixed
+		top: 40%
+		left: 50%
+		width: 45%
+		min-height: 100px 
+		text-align: center
+		background-color: $green
+		border: 1px solid $grey_light
+		border-radius: 5px
+		transform: translate(-50%, -50%)
+		z-index: 1001
+		p
+			padding: 20px
+			font-size: 24px
+			color: #fff
+		.h3
+			width: 100%
+			padding: 5px
+			font-size: 32px
+			font-weight: 600
+			border-bottom: 1px solid $grey_light
+	&__close
+		position: absolute
+		top: -30px
+		right: -30px
+		width: 30px
+		height: 30px
+		cursor: pointer
+		&:before, &:after
+			content: ''
+			position: absolute
+			top: 15px
+			left: 0
+			width: 30px
+			height: 3px
+			background-color: $green
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)

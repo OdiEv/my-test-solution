@@ -1,0 +1,91 @@
+{% set features = [
+		{
+			"img": "img/feature_comp_1.jpg",
+			"name": "Company Name",
+			"prof": "Manufacturer",
+			"address": "Belgrade, Serbia",
+			"follow": "Follow Now"
+		},
+		{
+			"img": "img/feature_comp_2.jpg",
+			"name": "Company Name",
+			"prof": "Service Provider",
+			"address": "New York, USA",
+			"follow": "Follow Now"
+		},
+		{
+			"img": "img/feature_comp_3.jpg",
+			"name": "Company Name",
+			"prof": "Supplier",
+			"address": "London, England",
+			"follow": "Follow Now"
+		}
+	]
+%}
+
+{% set navs = [
+		{
+			"img": "img/icon_1.png",
+			"name": "Feed"
+		},
+		{
+			"img": "img/icon_2.png",
+			"name": "Ask a Colleague"
+		},
+		{
+			"img": "img/icon_3.png",
+			"name": "Companies"
+		},
+		{
+			"img": "img/icon_4.png",
+			"name": "Service Directory"
+		}
+	]
+%}
+
+<div class="left">
+
+	<nav class="navigation flex">
+		{% for nav in navs %}
+			<a href="#" class="navigation__item">
+				<div class="navigation__image">
+					<img src={{ nav.img }} class="navigation__icon" alt="icon">
+				</div>
+				<span>{{ nav.name }}</span>
+			</a>
+		{% endfor %}
+	</nav>
+
+	<div class="banner">
+		<h3 class="h3">Advertisement</h3>
+		<img src="img/banner_1.jpg" class="banner__image" alt="banner">
+		<p>Ads By Denteez.com</p>
+	</div>
+
+	<div class="line"></div>
+
+	<div class="features layout_block">
+		<h3 class="layout_block__header features__header">Featured Companies</h3>
+		<a href="#" class="see_all">See All</a>
+		{% for feature in features %}
+			<div class="feature flex">
+				<img src={{ feature.img }} class="feature__image" alt="feature_companies">
+				<div class="feature__text">
+					<h4 class="feature__name layout_block__name">{{ feature.name }}</h4>
+					<p class="feature__prof layout_block__text">{{ feature.prof }}</p>
+					<p class="feature__address layout_block__text">{{ feature.address }}</p>
+					<a href="#" class="layout_block__links">{{ feature.follow }}</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="line"></div>
+
+	<div class="links">
+		<p class="links__copy">Denteez Copyright 2015</p>
+		<a href="#" class="links__terms">Terms of use</a>
+		<a href="#" class="links__policy">Privacy Policy</a>
+	</div>
+
+</div>

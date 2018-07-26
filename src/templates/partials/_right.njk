@@ -1,0 +1,85 @@
+{% set users = [
+		{
+			"name": "Dennis Adams",
+			"img": "img/people_1.jpg",
+			"prof": "Dentist (Practice  Owner)",
+			"address": "London, England",
+			"add": "Add Friend"
+		},
+		{
+			"name": "Mary Carpenter",
+			"img": "img/people_2.jpg",
+			"prof": "Dentist (Practice  Owner)",
+			"address": "Belgrade, Serbia",
+			"add": "Add Friend"
+		},
+		{
+			"name": "Danielle Salazar",
+			"img": "img/people_3.jpg",
+			"prof": "Dentist (Practice  Owner)",
+			"address": "Paris, France",
+			"add": "Add Friend"
+		}
+	]
+%}
+
+{% set products = [
+		{
+			name: "Product Name",
+			img: "img/product_1.jpg",
+			text: "Product Short Description. The quick brown fox jumps over the lazy dog."
+		},
+		{
+			name: "Product Name",
+			img: "img/product_2.jpg",
+			text: "Product Short Description. The quick brown fox jumps over the lazy dog. ssssssssssssss sssssss sssss ssssssss"
+		}
+	]
+%}
+
+<div class="right">
+
+	<div class="people layout_block">
+		<h3 class="layout_block__header">People you may know</h3>
+		<a href="#" class="see_all">See All</a>
+		{% for user in users %}
+			<div class="user">
+				<h4 class="user__name layout_block__name">{{ user.name }}</h4>
+				<div class="user__descr flex">
+					<img src={{ user.img }} class="user__image" alt="user">
+					<div class="user__text">
+						<p class="user__prof layout_block__text">{{ user.prof }}</p>
+						<p class="user__address layout_block__text">{{ user.address }}</p>
+						<a href="#" class="layout_block__links">{{ user.add }}</a>
+					</div>
+				</div>	
+			</div>
+		{% endfor %}
+	</div>
+	
+
+	<div class="line"></div>
+
+	<div class="products layout_block">
+		<h3 class="layout_block__header">Featured Products</h3>
+		<a href="#" class="see_all">See All</a>
+		{% for product in products %}
+			<div class="product">
+				<h4 class="product__name layout_block__name">{{ product.name }}</h4>
+				<div class="product__descr flex">
+					<img src={{ product.img }} class="product__image" alt="product">
+					<p class="product__text layout_block__text">{{ product.text }}</p>
+				</div>	
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="line"></div>
+
+	<div class="banner">
+		<h3 class="h3">Advertisement</h3>
+		<img src="img/banner_2.jpg" class="banner__image banner__image-2" alt="banner">
+		<p>Ads By Denteez.com</p>
+	</div>
+
+</div>	

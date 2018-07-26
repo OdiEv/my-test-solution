@@ -1,0 +1,59 @@
+<form class="form" id="my-form" action="http://504080.com/api/v1/support" method="POST">
+
+	<div class="form__inner">
+
+		<div class="form__data flex">
+
+			<p class="required">Fields marked "*" are required</p>
+
+			<label class="label label-select" for="enquiry_type">
+				<p>Enquiry Type *</p>
+				<img class="label__image" src="img/arrow_down.png" alt="arrow">
+				<select class="form__item form__item-select" id="enquiry_type" name="enquiry_type">
+				</select>
+				<span class="error" id="error-enquiry_type"></span>
+			</label>
+
+			<label class="label" for="other">
+				<input class="form__item" id="other" type="text" name="other" placeholder="Other" disabled>
+			</label>
+			
+			<label class="label label-half" for="user_name">
+				<p>Name *</p>
+				<input class="form__item" id="user_name" type="text" name="user_name" placeholder="Dentist">
+				<span class="error" id="error-user_name"></span>
+			</label>
+
+			<label class="label label-half" for="email">
+				<p>Email *</p>
+				<input class="form__item" id="email" type="text" name="email" placeholder="rachelm@gmail.com">
+				<span class="error" id="error-email"></span>
+			</label>
+
+			<label class="label" for="subject">
+				<p>Subject *</p>
+				<input class="form__item" id="subject" type="text" name="subject">
+				<span class="error" id="error-subject"></span>
+			</label>
+
+			<label class="label label-textarea" for="description">
+				<p>Description *</p>
+				<p class="label__count js-count">(0/1000)</p>
+				<textarea class="form__item form__item-textarea" name="description" id="description" maxlength="1000"></textarea>
+				<span class="error" id="error-description"></span>
+			</label>
+
+			<div class="dz__previews flex">
+				<div class="dz__message flex dz-default dz-message flex" id="dz__message">
+					<h5 class="h5">Add photo</h5>
+					<p>Maximum size of 300x300 jpeg jpg png 5 MB</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<button type="submit" class="support__btn btn btn-form_submit">Submit</button>
+
+</form>

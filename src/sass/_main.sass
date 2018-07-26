@@ -1,0 +1,62 @@
+.content
+	&__inner
+		justify-content: space-between
+
+.center
+	width: 100%
+	padding: 0 15px
+	flex-direction: column
+	&__top
+		padding: 10px 1px 16px 0 
+		justify-content: space-between
+		.h2
+			font-family: PN, sans-serif
+			font-weight: 400
+			font-size: 30px
+			color: $blue_midnight
+	&__btn
+		margin-top: 2px
+
+.category
+	padding: 15px 7px
+	justify-content: space-around
+	flex-wrap: wrap
+	border: 1px solid $grey_solitude
+	border-radius: 5px
+	&__block
+		width: 140px
+		margin: 0 8px 15px
+		flex-direction: column
+		align-items: center
+		cursor: pointer
+		+rm(1320)
+			margin: 0 9px 15px
+		&:hover
+			.category__item
+				background-color: $grey_hover
+			.category__title
+				color: $green_sushi
+	&__item
+		position: relative
+		width: 140px
+		height: 140px
+		margin-bottom: 15px
+		border: 1px solid $grey_solitude
+		transition: background-color 0.2s linear
+	&__icon
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 86%
+		transform: translate(-50%, -50%)
+	&__title
+		text-align: center
+		font-size: 14px
+		line-height: 17px
+		color: $blue_midnight
+		transition: color 0.2s linear
+	&__error
+		text-align: center
+		font-size: 30px
+		line-height: 1.4
+		color: red

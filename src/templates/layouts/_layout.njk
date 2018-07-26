@@ -1,0 +1,37 @@
+{% import "./_mixins.njk" as mixins %}
+<!DOCTYPE html>
+<html>
+<head>
+  {% include "layouts/_head.njk" %}
+</head>
+<body class="js-body">
+
+<!-- BEGIN content -->
+  {% block content %}{% endblock %}
+  
+  {% block contactUs %}{% endblock %}
+
+  <div class="modal js-modal">
+		<div class="modal__back js-modal-back"></div>
+		<div class="modal__block js-modal-block">
+			<div class="modal__close js-modal-close"></div>
+		</div>
+	</div>
+
+<!-- END content -->
+
+<!-- BEGIN scripts -->
+
+{% block footerScripts %}{% endblock %}
+<script src="js/vendors/polyfill.object-fit.min.js"></script>
+<script>
+  // Call polyfill to fit in images
+  objectFit.polyfill({
+    selector: 'img',
+    fittype: 'cover'
+  });
+</script>
+<!-- END scripts -->
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.dz
+	&__previews
+		align-items: flex-start
+		flex-wrap: wrap
+	&__error
+		position: absolute
+		top: -1px
+		right: -161px
+	&__message
+		width: 130px
+		height: 130px
+		padding: 0 10px
+		justify-content: center
+		flex-direction: column
+		color: #000
+		text-align: center
+		border: 1px solid $grey_light
+		background-color: #f7f7f7
+		border-radius: 4px
+		cursor: pointer
+		.h5
+			margin-bottom: 3px
+			font-size: 16px
+			font-weight: 400
+			color: $grey-blue
+		p
+			margin-bottom: 5px
+			font-size: 12px
+			color: #c2c2c4
+			&:last-child
+				margin-bottom: 0
+			span
+				color: #fb6363
+	&-preview
+		position: relative
+		margin-right: 30px
+		border: 1px solid $grey_light
+		background-color: #f7f7f7
+		border-radius: 4px
+		cursor: pointer
+	&-image
+		min-width: 128px
+		min-height: 128px
+		text-align: center
+		img
+			border-radius: 4px
+	&__remove
+		position: absolute
+		top: -12px
+		right: -12px
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		background: linear-gradient(#5ba3c3, #5ba3c3 50%, #65bade 50%, #65bade)
+		z-index: 5
+		&:hover
+			border: 1px solid #d95252
+			background: linear-gradient(#bd4b4c, #bd4b4c 50%, #d95252 50%, #d95252)
+			.dz__remove-inner
+				&:before, &:after
+					top: 10px
+					left: 3px
+		&-inner
+			&:before, &:after
+				content: ''
+				position: absolute
+				top: 11px
+				left: 4px
+				width: 16px
+				height: 2px
+				background-color: #fff
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+	&-error-mark, &-success-mark, &-error-message, &-progress, &-details
+		display: none

@@ -1,0 +1,54 @@
+---
+title: Contact us
+---
+
+{% extends "./layouts/_layout.njk" %}
+
+{% block contactUs %}
+
+{% include "partials/_contactHeader.njk" %}
+
+<section class="title" style="background-image: url(img/smile_bg.png)">
+	<div class="title__inner">
+		<h1 class="h1">Home of Dentistry</h1>
+		<p>Denteez was created by dentists for dentistry in order to make the life of everyone involved in destiny easier.</p>
+	</div>
+</section>
+
+<section id="support" class="support" style="background-image: url(img/stuff_bg.png)">
+	<div class="support__inner">
+		
+		{% include "partials/_contactForm.njk" %}
+
+	</div>
+</section>
+
+<section class="about">
+	<div class="container-contact">
+		<div class="about__inner">
+			<h2 class="h2">
+				About Denteez
+			</h2>
+			<div class="about__text flex">
+				<p>
+					Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?
+				</p>
+				<p>
+					Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="line"></div>
+
+{% include "partials/_contactFooter.njk" %}
+
+{% endblock %}
+
+{% block footerScripts %}
+
+<script type="text/javascript" src="js/contact.js"></script>
+
+{% endblock %}

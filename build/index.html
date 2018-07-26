@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Denteez</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="js/vendors/picturefill.min.js"></script>
+  </head>
+  <body class="js-body">
+
+    <!-- BEGIN content -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner flex">
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          <div class="header__search">
+            <form class="header__search-form">
+              <input type="search" class="search" placeholder="Company Name">
+              <button class="search__btn">
+                <img src="img/search.png" alt="search">
+              </button>
+            </form>
+          </div>
+          <div class="header__icons flex">
+            <a href="contact.html" title="Contact us" class="header__icon header__icon-1">
+              <img src="img/h_icon_1.png" alt="icon">
+            </a>
+            <a href="#" class="header__icon header__icon-2">
+              <img src="img/h_icon_2.png" alt="icon">
+            </a>
+          </div>
+          <div class="header__user">
+            <div class="header__user-profile flex">
+              <img class="header__photo" src="img/h_user.png" alt="photo">
+              <span class="header__name">Maximillian Beekeeper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner flex">
+
+          <div class="left">
+
+            <nav class="navigation flex">
+              <a href="#" class="navigation__item">
+                <div class="navigation__image">
+                  <img src=img/icon_1.png class="navigation__icon" alt="icon">
+                </div>
+                <span>Feed</span>
+              </a>
+              <a href="#" class="navigation__item">
+                <div class="navigation__image">
+                  <img src=img/icon_2.png class="navigation__icon" alt="icon">
+                </div>
+                <span>Ask a Colleague</span>
+              </a>
+              <a href="#" class="navigation__item">
+                <div class="navigation__image">
+                  <img src=img/icon_3.png class="navigation__icon" alt="icon">
+                </div>
+                <span>Companies</span>
+              </a>
+              <a href="#" class="navigation__item">
+                <div class="navigation__image">
+                  <img src=img/icon_4.png class="navigation__icon" alt="icon">
+                </div>
+                <span>Service Directory</span>
+              </a>
+            </nav>
+
+            <div class="banner">
+              <h3 class="h3">Advertisement</h3>
+              <img src="img/banner_1.jpg" class="banner__image" alt="banner">
+              <p>Ads By Denteez.com</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="features layout_block">
+              <h3 class="layout_block__header features__header">Featured Companies</h3>
+              <a href="#" class="see_all">See All</a>
+              <div class="feature flex">
+                <img src=img/feature_comp_1.jpg class="feature__image" alt="feature_companies">
+                <div class="feature__text">
+                  <h4 class="feature__name layout_block__name">Company Name</h4>
+                  <p class="feature__prof layout_block__text">Manufacturer</p>
+                  <p class="feature__address layout_block__text">Belgrade, Serbia</p>
+                  <a href="#" class="layout_block__links">Follow Now</a>
+                </div>
+              </div>
+              <div class="feature flex">
+                <img src=img/feature_comp_2.jpg class="feature__image" alt="feature_companies">
+                <div class="feature__text">
+                  <h4 class="feature__name layout_block__name">Company Name</h4>
+                  <p class="feature__prof layout_block__text">Service Provider</p>
+                  <p class="feature__address layout_block__text">New York, USA</p>
+                  <a href="#" class="layout_block__links">Follow Now</a>
+                </div>
+              </div>
+              <div class="feature flex">
+                <img src=img/feature_comp_3.jpg class="feature__image" alt="feature_companies">
+                <div class="feature__text">
+                  <h4 class="feature__name layout_block__name">Company Name</h4>
+                  <p class="feature__prof layout_block__text">Supplier</p>
+                  <p class="feature__address layout_block__text">London, England</p>
+                  <a href="#" class="layout_block__links">Follow Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="links">
+              <p class="links__copy">Denteez Copyright 2015</p>
+              <a href="#" class="links__terms">Terms of use</a>
+              <a href="#" class="links__policy">Privacy Policy</a>
+            </div>
+
+          </div>
+          <div class="center flex">
+            <div class="center__top flex">
+              <h2 class="h2">Service Directory</h2>
+              <button class="center__btn btn js-addservice">Add New Service</button>
+            </div>
+            <div class="category flex js-category"></div>
+          </div>
+
+          <div class="right">
+
+            <div class="people layout_block">
+              <h3 class="layout_block__header">People you may know</h3>
+              <a href="#" class="see_all">See All</a>
+              <div class="user">
+                <h4 class="user__name layout_block__name">Dennis Adams</h4>
+                <div class="user__descr flex">
+                  <img src=img/people_1.jpg class="user__image" alt="user">
+                  <div class="user__text">
+                    <p class="user__prof layout_block__text">Dentist (Practice Owner)</p>
+                    <p class="user__address layout_block__text">London, England</p>
+                    <a href="#" class="layout_block__links">Add Friend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <h4 class="user__name layout_block__name">Mary Carpenter</h4>
+                <div class="user__descr flex">
+                  <img src=img/people_2.jpg class="user__image" alt="user">
+                  <div class="user__text">
+                    <p class="user__prof layout_block__text">Dentist (Practice Owner)</p>
+                    <p class="user__address layout_block__text">Belgrade, Serbia</p>
+                    <a href="#" class="layout_block__links">Add Friend</a>
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <h4 class="user__name layout_block__name">Danielle Salazar</h4>
+                <div class="user__descr flex">
+                  <img src=img/people_3.jpg class="user__image" alt="user">
+                  <div class="user__text">
+                    <p class="user__prof layout_block__text">Dentist (Practice Owner)</p>
+                    <p class="user__address layout_block__text">Paris, France</p>
+                    <a href="#" class="layout_block__links">Add Friend</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="products layout_block">
+              <h3 class="layout_block__header">Featured Products</h3>
+              <a href="#" class="see_all">See All</a>
+              <div class="product">
+                <h4 class="product__name layout_block__name">Product Name</h4>
+                <div class="product__descr flex">
+                  <img src=img/product_1.jpg class="product__image" alt="product">
+                  <p class="product__text layout_block__text">Product Short Description. The quick brown fox jumps over the lazy dog.</p>
+                </div>
+              </div>
+              <div class="product">
+                <h4 class="product__name layout_block__name">Product Name</h4>
+                <div class="product__descr flex">
+                  <img src=img/product_2.jpg class="product__image" alt="product">
+                  <p class="product__text layout_block__text">Product Short Description. The quick brown fox jumps over the lazy dog. ssssssssssssss sssssss sssss ssssssss</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="banner">
+              <h3 class="h3">Advertisement</h3>
+              <img src="img/banner_2.jpg" class="banner__image banner__image-2" alt="banner">
+              <p>Ads By Denteez.com</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal js-modal">
+      <div class="modal__back js-modal-back"></div>
+      <div class="modal__block js-modal-block">
+        <div class="modal__close js-modal-close"></div>
+      </div>
+    </div>
+
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+
+    <script type="text/javascript" src="js/home.js"></script>
+
+    <script src="js/vendors/polyfill.object-fit.min.js"></script>
+    <script>
+      // Call polyfill to fit in images
+      objectFit.polyfill(
+      {
+        selector: 'img',
+        fittype: 'cover'
+      });
+
+    </script>
+    <!-- END scripts -->
+
+  </body>
+</html>

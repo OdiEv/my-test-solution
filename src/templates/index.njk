@@ -1,0 +1,37 @@
+---
+title: Denteez
+---
+
+{% extends "./layouts/_layout.njk" %}
+
+{% block content %}
+
+{% include "partials/_header.njk" %}
+
+<section class="content">
+	<div class="container">
+		<div class="content__inner flex">
+
+			{% include "partials/_left.njk" %}
+
+			<div class="center flex">
+				<div class="center__top flex">
+					<h2 class="h2">Service Directory</h2>
+					<button class="center__btn btn js-addservice">Add New Service</button>
+				</div>
+				<div class="category flex js-category"></div>
+			</div>
+
+			{% include "partials/_right.njk" %}
+
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+
+{% block footerScripts %}
+
+<script type="text/javascript" src="js/home.js"></script>
+
+{% endblock %}
